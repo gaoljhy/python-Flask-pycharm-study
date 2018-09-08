@@ -1,8 +1,16 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from blog.modules import users, articles
+
+
+
+
 # 创建 wblog web应用对象
 wblog = Flask(__name__)
+
+
+
+
+
 
 # 加载配置文件内容
 wblog.config.from_object('blog.setting')  # 模块下的setting文件名，不用加py后缀
@@ -13,6 +21,4 @@ wblog.config.from_object('blog.setting')  # 模块下的setting文件名，不�
 # 创建数据库对象
 db = SQLAlchemy(wblog)
 
-# 在数据库中创建表
-# 在python 解释器中调用 db.create_all()
 
