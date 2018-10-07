@@ -1,5 +1,6 @@
 """
 测试 前端界面搭建与简单交互
+基本框架 及render_template
 """
 
 from flask import Flask
